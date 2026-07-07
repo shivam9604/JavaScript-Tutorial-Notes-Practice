@@ -1,0 +1,19 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 2% 0;
+}
+button{
+    border-radius: 75px;
+    background: rgb(226, 226, 60);
+    margin: 0 2%;
+    width: 20%;
+    height: 35px;
+}
+button:hover{
+    background: rgb(243, 243, 146);
+}

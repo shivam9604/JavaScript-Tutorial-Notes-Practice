@@ -1,0 +1,58 @@
+<!--*  EVENTS IS JAVASCRIPT  -->
+
+<!--? In JavaScript, there are several ways to attach event handlers to html elements. -->
+<!--? Here are 3 common methods: -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <!-- ======= Start Inline Events ======= -->
+     <h1>Inline Event</h1>
+     <button onclick="alert('Welcome')">Greeting</button>
+     <button ondblclick="alert('Welcome Again')">Greeting again</button>
+     <button onmouseover="alert('Welcome Again')">Greeting again</button>
+
+    <!-- ======= End Inline Events ======= -->
+
+    <!-- ======= Start Dom Event Handler ======= -->
+     <h1>Dom Event Handler</h1>
+     <button id = "myBtn">Greeting</button>
+     <button id = "myBtn1">Greeting again</button>
+    <!-- ======= End Dom Event Handler ======= -->
+
+    <!-- ======= Start addEventListener Event Handler ======= -->
+     <h1>addEventListener Event Handler</h1>
+     <button id = "myBtn2">Greeting</button>
+     <button id = "myBtn3">Greeting again</button>
+    <!-- ======= End addEventListener Event Handler ======= -->
+    
+
+
+
+    <script>
+        document.getElementById("myBtn").onclick = function () {
+            alert("Welcome to JavaScript!");
+        };
+        document.getElementById("myBtn1").onmousemove = function () {
+            alert("Welcome to JavaScript!");
+        };
+
+        //document.getElementById("myBtn2").addEventListener('click',function () {
+        //    alert("Welcome to JavaScript Learning.");
+        //});
+        document.getElementById("myBtn2").addEventListener('click', () => {
+            alert("Welcome to JavaScript Learning.");
+        });
+        document.getElementById("myBtn3").addEventListener('mouseover', () => {
+            alert("Welcome to JavaScript Learning.");
+        });
+    </script>
+</body>
+</html>
